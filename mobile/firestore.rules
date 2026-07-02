@@ -1,0 +1,12 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Readings: anyone can read (for map); anyone can create (upload from app).
+    // For production you may want to add rate limiting or auth.
+    match /readings/{readingId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if false;
+    }
+  }
+}

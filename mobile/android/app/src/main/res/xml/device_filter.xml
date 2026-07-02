@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Silicon Labs CP210x (common on ESP32 dev boards) -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <usb-device vendor-id="4292" product-id="60016" />
+    <usb-device vendor-id="4292" product-id="60017" />
+    <!-- CH340/CH341 (common on ESP32 dev boards) -->
+    <usb-device vendor-id="1659" product-id="8963" />
+    <usb-device vendor-id="1659" product-id="29987" />
+    <!-- FTDI -->
+    <usb-device vendor-id="1027" product-id="24577" />
+</resources>
