@@ -10,7 +10,7 @@ Different dissolved ions respond uniquely to an oscillating electric field depen
  
 **Hardware:** a custom interdigitated PCB sensor feeds into an AD5933 impedance analyzer driven by an ESP32, all consolidated into a single handheld enclosure.
  
-**Software:** the sensor runs a frequency sweep and streams data to the Flutter app, which runs baseline subtraction and on-device classification, then optionally uploads the result to a crowdsourced contamination map.
+**Software:** the sensor runs a frequency sweep and streams data to the Flutter app, which runs baseline subtraction and on-device classification, then optionally uploads the result via Firebase Firestore to a crowdsourced contamination map.
 
 ![SafeSip workflow: sensor assembly to contamination map](docs/images/safesip-workflow.png)
  
